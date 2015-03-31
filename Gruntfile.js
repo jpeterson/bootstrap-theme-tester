@@ -35,7 +35,8 @@ module.exports = function(grunt) {
           dest: './lib',
           flatten: true
         }]
-      },
+      }
+    },
 
     sass: {
       options: {
@@ -68,16 +69,32 @@ module.exports = function(grunt) {
       }
     },
 
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          livereload: true,
+          open: true
+        }
+      }
+    },
+
     watch: {
       css: {
         files: 'styles/*.scss',
         tasks: ['sass:dev']
+      },
+      livereload: {
+        options: {
+          livereload: true
+        },
+        files: ['index.html', 'assets/css/**.css']
       }
     }
   });
 
   // Default task
-  grunt.registerTask('default', ['sass:dev', 'watch']);
+  grunt.registerTask('default', ['connect', 'watch']);
 
   // Other tasks
   grunt.registerTask('init', ['shell:bowerInstall', 'copy:bower', 'sass:dev', 'watch']);

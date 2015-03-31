@@ -1,13 +1,14 @@
 {
   "name": "bootstrap-theme-tester",
   "version": "0.1.0",
-  "dependencies": {
-  	"grunt": "latest",
-  	"grunt-contrib-copy": "latest",
-  	"grunt-contrib-sass": "^0.8.1",
-  	"grunt-contrib-watch": "latest",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-copy": "latest",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-watch": "latest",
     "grunt-contrib-clean": "^0.6.0",
     "load-grunt-tasks": "latest",
-    "grunt-shell": "^1.1.1"
+    "grunt-shell": "^1.1.1",
+    "grunt-contrib-connect": "^0.9.0"
   }
 }
