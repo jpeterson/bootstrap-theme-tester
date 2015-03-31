@@ -1,0 +1,27 @@
+{
+  "browser": true,
+  "curly": true,
+  "dojo": true,
+  "eqeqeq": true,
+  "esnext": true,
+  "evil": true,
+  "immed": true,
+  "indent": 2,
+  "jquery": true,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "regexdash": true,
+  "regexp": true,
+  "smarttabs": true,
+  "sub": true,
+  "trailing": true,
+  "undef": true,
+  "unused": true,
+  "globals": {
+    "Backbone": false,
+    "_": false,
+    "console": false
+  }
+}
