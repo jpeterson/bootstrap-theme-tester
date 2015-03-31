@@ -97,7 +97,5 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['connect', 'watch']);
 
   // Other tasks
-  grunt.registerTask('init', ['shell:bowerInstall', 'copy:bower', 'sass:dev', 'watch']);
-  grunt.registerTask('dev', ['sass:dev']);
-  grunt.registerTask('build', ['sass:dist']);
+  grunt.registerTask('init', ['shell:bowerInstall', 'copy:bower', 'sass:dev', 'default']);
 };
