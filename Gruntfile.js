@@ -36,34 +36,6 @@ module.exports = function(grunt) {
           flatten: true
         }]
       },
-      build: {
-        files: [{
-          cwd: 'js',
-          src: ['**'],
-          dest: 'release/js',
-          expand: true
-        }, {
-          cwd: 'config',
-          src: ['**'],
-          dest: 'release/config',
-          expand: true
-        }, {
-          cwd: 'assets',
-          src: ['**'],
-          dest: 'release/assets',
-          expand: true
-        }, {
-          cwd: 'lib',
-          src: ['**'],
-          dest: 'release/lib',
-          expand: true
-        }, {
-          src: 'index.html',
-          dest: 'release',
-          expand: true
-        }]
-      }
-    },
 
     sass: {
       options: {
@@ -109,5 +81,6 @@ module.exports = function(grunt) {
 
   // Other tasks
   grunt.registerTask('init', ['shell:bowerInstall', 'copy:bower', 'sass:dev', 'watch']);
-  grunt.registerTask('build', ['clean', 'sass:dist', 'copy:build']);
+  grunt.registerTask('dev', ['sass:dev']);
+  grunt.registerTask('build', ['sass:dist']);
 };
