@@ -1,12 +1,6 @@
-// Compass
-@import "compass/reset";
-
 // Bootstrap
 @import "bootstrap";
 
 // FontAwesome
-@import "../bower_components/fontawesome/scss/font-awesome.scss";
-
-// Locals
-// @import "variables";
-// @import "theme";
+// Uncomment the following line to include fontawesome styles in your generated CSS
+// @import "../bower_components/fontawesome/scss/font-awesome.scss";
