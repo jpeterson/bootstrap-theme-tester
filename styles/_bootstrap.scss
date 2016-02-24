@@ -1,6 +1,5 @@
 @import "variables";
 
-
 // Core variables and mixins
 @import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/variables";
 @import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/mixins";
@@ -8,7 +7,7 @@
 // Reset and dependencies
 @import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/normalize";
 @import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/print";
-@import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/glyphicons";
+// @import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
 @import "../bower_components/bootstrap-sass-twbs/assets/stylesheets/bootstrap/scaffolding";
